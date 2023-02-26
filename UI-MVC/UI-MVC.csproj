@@ -20,4 +20,9 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BL\BL.csproj" />
+      <ProjectReference Include="..\DAL\DAL.csproj" />
+    </ItemGroup>
+
 </Project>
