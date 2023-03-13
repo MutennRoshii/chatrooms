@@ -1,0 +1,13 @@
+{
+  "author": "Abdelkarim Lamrini",
+  "version": "1.0.0",
+  "dependencies": {},
+  "description": "ASP.NET MVC Chat App",
+  "license": "GPLv3",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "scripts": {
+    "css:build": "npx tailwindcss -i ./wwwroot/css/input.css -o ./wwwroot/css/output.css"
+  }
+}

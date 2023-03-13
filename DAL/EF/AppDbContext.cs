@@ -8,11 +8,11 @@ namespace ChatApp.DAL.EF;
 
 public class AppDbContext : IdentityDbContext<User>
 {
-    public new DbSet<User>? Users { get; set; }
-    public DbSet<Membership>? Memberships { get; set; }
-    public DbSet<Server>? Servers { get; set; }
-    public DbSet<Channel>? Channels { get; set; }
-    public DbSet<Message>? Messages { get; set; }
+    public new DbSet<User> Users { get; set; }
+    public DbSet<Membership> Memberships { get; set; }
+    public DbSet<Server> Servers { get; set; }
+    public DbSet<Channel> Channels { get; set; }
+    public DbSet<Message> Messages { get; set; }
 
     public AppDbContext(DbContextOptions options) : base(options)
     {

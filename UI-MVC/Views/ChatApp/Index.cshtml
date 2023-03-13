@@ -1,0 +1,648 @@
+﻿<div class="flex h-screen w-screen">
+<!-- Sidebar Servers -->
+<section
+    class="flex h-screen w-20 flex-col justify-between bg-gray-900 text-white shadow-lg">
+    <!-- Server Icons -->
+    <div>
+        <div class="sidebar-icon group">
+            <i class="fa-solid fa-xl fa-hippo"></i>
+            <span class="sidebar-tooltip group-hover:scale-100">
+                Direct Messages
+            </span
+            >
+        </div>
+        <div class="mx-2 h-[2px] rounded-md bg-slate-500"></div>
+        <div class="sidebar-icon group">
+            <i class="fa-solid fa-xl fa-bomb"></i>
+            <span class="sidebar-tooltip group-hover:scale-100">Bombs</span>
+        </div>
+        <div class="sidebar-icon group">
+            <i class="fa-solid fa-xl fa-ghost"></i>
+            <span class="sidebar-tooltip group-hover:scale-100">Ghosts</span>
+        </div>
+        <div class="sidebar-icon group">
+            <i class="fa-solid fa-xl fa-mug-hot"></i>
+            <span class="sidebar-tooltip group-hover:scale-100">Coffee</span>
+        </div>
+    </div>
+    <!-- Settings & Profile -->
+    <div>
+        <div class="mx-2 mt-2 h-[2px] rounded-md bg-slate-500"></div>
+        <div class="sidebar-icon group">
+            <i class="fa-solid fa-xl fa-circle-user"></i>
+            <span class="sidebar-tooltip group-hover:scale-100">Account</span>
+        </div>
+        <div class="sidebar-icon group">
+            <i class="fa-solid fa-xl fa-gear"></i>
+            <span class="sidebar-tooltip group-hover:scale-100">Settings</span>
+        </div>
+    </div>
+</section>
+<!-- Sidebar Channels -->
+<section class="flex h-screen w-64 flex-col bg-gray-800 text-gray-100">
+    <!-- Server Top Bar -->
+    <div
+        class="text-md flex h-12 cursor-pointer justify-between border-b-[1px] border-gray-500 py-2 px-4 align-middle font-bold shadow-lg hover:bg-gray-500">
+        <span>Bombs Server</span>
+        <i class="fa-solid fa-angle-down my-auto"></i>
+    </div>
+    <!-- Channel List -->
+    <div class="py-8 px-2 text-xs">
+        <ul class="text-gray-400">
+            <!-- Channel Group -->
+            <li
+                class="mb-1 flex cursor-pointer justify-between hover:text-gray-300">
+                <span>
+                    <i class="fa-solid fa-angle-down my-auto"></i>
+                    INFORMATION
+                </span>
+                <i class="fa-solid fa-plus my-auto"></i>
+            </li>
+            <!-- Channel Tabs -->
+            <li
+                class="mb-1 flex h-8 cursor-pointer items-center rounded bg-gray-600 px-2 text-white">
+                <i class="fa-solid fa-xl fa-hashtag"></i>
+                <span class="ml-2 inline-block align-middle text-lg">
+                    bomb-talk
+                </span>
+            </li>
+            <li
+                class="mb-1 flex h-8 cursor-pointer items-center rounded bg-gray-800 px-2 hover:bg-gray-700 hover:text-white">
+                <i class="fa-solid fa-xl fa-book"></i>
+                <span class="ml-2 inline-block align-middle text-lg">
+                    read-me
+                </span>
+            </li>
+            <!-- Channel Group -->
+            <li
+                class="mb-1 flex cursor-pointer justify-between hover:text-gray-300">
+                <span>
+                    <i class="fa-solid fa-angle-down my-auto"></i>
+                    CHANNELS
+                </span>
+                <i class="fa-solid fa-plus my-auto"></i>
+            </li>
+            <!-- Channel Tabs -->
+            <li
+                class="mb-1 flex h-8 cursor-pointer items-center rounded bg-gray-800 px-2 hover:bg-gray-700 hover:text-white">
+                <i class="fa-solid fa-xl fa-bullhorn"></i>
+                <span class="ml-2 inline-block align-middle text-lg">
+                    announcements
+                </span>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Main Chat Content -->
+<section
+    class="flex h-screen w-full flex-col items-stretch justify-between bg-gray-700 text-gray-400">
+<!-- Channel Top Bar -->
+<div
+    class="flex h-12 border-b-[1px] border-gray-500 py-2 px-4 align-middle font-bold shadow-lg">
+    <i class="fa-solid fa-xl fa-hashtag my-auto"></i>
+    <span class="ml-2 inline-block align-middle text-lg text-gray-50">
+        bomb-talk
+    </span>
+</div>
+<!-- Channel Messages -->
+<div class="h-full overflow-y-scroll px-4 py-4 text-gray-50">
+<!-- Message List -->
+<ul id="message-list" class="flex flex-col">
+<!-- Message Root -->
+<li>
+    <div class="message-root relative mb-2 min-h-[64px] pl-20 pr-12">
+        <img
+            src="https://cdn.discordapp.com/avatars/643596421689245718/bb1d156224c26ff07a6ad828273d4f11.webp?size=100"
+            alt="Profile Pic"
+            class="absolute left-0 h-14 w-14 rounded-full"/>
+        <h3 class="header">
+            <span class="username text-lg font-bold"> Muten Roshi </span>
+            <span
+                class="timestamp timestampInline ml-2 text-xs font-bold text-gray-400">
+                <time
+                    aria-label="March 7, 2023 10:48 AM"
+                    datetime="2023-03-07T09:48:26.246Z">
+                    03/07/2023 10:48 AM
+                </time>
+            </span>
+        </h3>
+        <div class="markup messageContent text-lg">I might</div>
+    </div>
+</li>
+<!-- Message Node -->
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Actually</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">
+            Be in love with the butter chicken shawarma
+        </div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">I just tasted it</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Its so good</div>
+    </div>
+</li>
+<li>
+    <div class="message-root relative mb-2 min-h-[64px] pl-20 pr-12">
+        <img
+            src="https://cdn.discordapp.com/avatars/643596421689245718/bb1d156224c26ff07a6ad828273d4f11.webp?size=100"
+            alt="Profile Pic"
+            class="absolute left-0 h-14 w-14 rounded-full"/>
+        <h3 class="header">
+            <span class="username text-lg font-bold"> Muten Roshi </span>
+            <span
+                class="timestamp timestampInline ml-2 text-xs font-bold text-gray-400">
+                <time
+                    aria-label="March 7, 2023 10:48 AM"
+                    datetime="2023-03-07T09:48:26.246Z">
+                    03/07/2023 10:48 AM
+                </time>
+            </span>
+        </h3>
+        <div class="markup messageContent text-lg">I might</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Actually</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">
+            Be in love with the butter chicken shawarma
+        </div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">I just tasted it</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Its so good</div>
+    </div>
+</li>
+<li>
+    <div class="message-root relative mb-2 min-h-[64px] pl-20 pr-12">
+        <img
+            src="https://cdn.discordapp.com/avatars/643596421689245718/bb1d156224c26ff07a6ad828273d4f11.webp?size=100"
+            alt="Profile Pic"
+            class="absolute left-0 h-14 w-14 rounded-full"/>
+        <h3 class="header">
+            <span class="username text-lg font-bold"> Muten Roshi </span>
+            <span
+                class="timestamp timestampInline ml-2 text-xs font-bold text-gray-400">
+                <time
+                    aria-label="March 7, 2023 10:48 AM"
+                    datetime="2023-03-07T09:48:26.246Z">
+                    03/07/2023 10:48 AM
+                </time>
+            </span>
+        </h3>
+        <div class="markup messageContent text-lg">I might</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Actually</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">
+            Be in love with the butter chicken shawarma
+        </div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">I just tasted it</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Its so good</div>
+    </div>
+</li>
+<li>
+    <div class="message-root relative mb-2 min-h-[64px] pl-20 pr-12">
+        <img
+            src="https://cdn.discordapp.com/avatars/643596421689245718/bb1d156224c26ff07a6ad828273d4f11.webp?size=100"
+            alt="Profile Pic"
+            class="absolute left-0 h-14 w-14 rounded-full"/>
+        <h3 class="header">
+            <span class="username text-lg font-bold"> Muten Roshi </span>
+            <span
+                class="timestamp timestampInline ml-2 text-xs font-bold text-gray-400">
+                <time
+                    aria-label="March 7, 2023 10:48 AM"
+                    datetime="2023-03-07T09:48:26.246Z">
+                    03/07/2023 10:48 AM
+                </time>
+            </span>
+        </h3>
+        <div class="markup messageContent text-lg">I might</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Actually</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">
+            Be in love with the butter chicken shawarma
+        </div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">I just tasted it</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Its so good</div>
+    </div>
+</li>
+<li>
+    <div class="message-root relative mb-2 min-h-[64px] pl-20 pr-12">
+        <img
+            src="https://cdn.discordapp.com/avatars/643596421689245718/bb1d156224c26ff07a6ad828273d4f11.webp?size=100"
+            alt="Profile Pic"
+            class="absolute left-0 h-14 w-14 rounded-full"/>
+        <h3 class="header">
+            <span class="username text-lg font-bold"> Muten Roshi </span>
+            <span
+                class="timestamp timestampInline ml-2 text-xs font-bold text-gray-400">
+                <time
+                    aria-label="March 7, 2023 10:48 AM"
+                    datetime="2023-03-07T09:48:26.246Z">
+                    03/07/2023 10:48 AM
+                </time>
+            </span>
+        </h3>
+        <div class="markup messageContent text-lg">I might</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Actually</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">
+            Be in love with the butter chicken shawarma
+        </div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">I just tasted it</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Its so good</div>
+    </div>
+</li>
+<li>
+    <div class="message-root relative mb-2 min-h-[64px] pl-20 pr-12">
+        <img
+            src="https://cdn.discordapp.com/avatars/643596421689245718/bb1d156224c26ff07a6ad828273d4f11.webp?size=100"
+            alt="Profile Pic"
+            class="absolute left-0 h-14 w-14 rounded-full"/>
+        <h3 class="header">
+            <span class="username text-lg font-bold"> Muten Roshi </span>
+            <span
+                class="timestamp timestampInline ml-2 text-xs font-bold text-gray-400">
+                <time
+                    aria-label="March 7, 2023 10:48 AM"
+                    datetime="2023-03-07T09:48:26.246Z">
+                    03/07/2023 10:48 AM
+                </time>
+            </span>
+        </h3>
+        <div class="markup messageContent text-lg">I might</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Actually</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">
+            Be in love with the butter chicken shawarma
+        </div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">I just tasted it</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Its so good</div>
+    </div>
+</li>
+<li>
+    <div class="message-root relative mb-2 min-h-[64px] pl-20 pr-12">
+        <img
+            src="https://cdn.discordapp.com/avatars/643596421689245718/bb1d156224c26ff07a6ad828273d4f11.webp?size=100"
+            alt="Profile Pic"
+            class="absolute left-0 h-14 w-14 rounded-full"/>
+        <h3 class="header">
+            <span class="username text-lg font-bold"> Muten Roshi </span>
+            <span
+                class="timestamp timestampInline ml-2 text-xs font-bold text-gray-400">
+                <time
+                    aria-label="March 7, 2023 10:48 AM"
+                    datetime="2023-03-07T09:48:26.246Z">
+                    03/07/2023 10:48 AM
+                </time>
+            </span>
+        </h3>
+        <div class="markup messageContent text-lg">I might</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Actually</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">
+            Be in love with the butter chicken shawarma
+        </div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">I just tasted it</div>
+    </div>
+</li>
+<li>
+    <div class="message-node group relative mb-2 pl-20 pr-12">
+        <span
+            class="invisible absolute top-1.5 left-0 text-xs font-bold text-gray-400 group-hover:visible">
+            <time
+                aria-label="March 7, 2023 10:48 AM"
+                datetime="2023-03-07T09:48:36.631Z">
+                10:48 AM
+            </time>
+        </span>
+        <div class="markup messageContent text-lg">Its so good</div>
+    </div>
+</li>
+</ul>
+</div>
+<!-- Input Field -->
+<div class="flex h-16 flex-col justify-center px-4 py-2">
+    <div class="relative">
+        <div
+            class="pointer-events-none absolute inset-y-0 flex items-center pl-3">
+            <i class="fa-solid fa-paper-plane flex-none"></i>
+        </div>
+        <input
+            type="text"
+            id="message-input"
+            class="w-full rounded-xl bg-gray-800 p-3 pl-10"
+            placeholder="Message #general"/>
+    </div>
+</div>
+</section>
+</div>
